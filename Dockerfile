@@ -10,4 +10,4 @@ RUN mvn clean package
 FROM openjdk:11-jdk
 COPY --from=build /app/target/spring-boot-web.jar /
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","/dfe-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","/spring-boot-web.jar"]
